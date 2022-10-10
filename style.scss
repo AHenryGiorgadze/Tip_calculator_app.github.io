@@ -1,0 +1,194 @@
+$StrongCyan: hsl(172, 67%, 45%);
+$VeryDarkCyan: hsl(183, 100%, 15%);
+$DarkGrayishCyan: hsl(186, 14%, 43%);
+$GrayishCyan: hsl(184, 14%, 56%);
+$LightGrayishCyan: hsl(185, 41%, 84%);
+$VeryLightGrayishCyan: hsl(189, 41%, 97%);
+
+* {
+  font-family: "Varela Round", sans-serif;
+  border: none;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(255, 166, 0);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 8%;
+  width: 84%;
+  background-color: rgb(240, 240, 240);
+}
+
+.leftContainer {
+  position: relative;
+  font-size: 22px;
+}
+
+.Input-Wrapper {
+  position: relative;
+}
+
+.Input-Wrapper img {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+
+.leftContainer p {
+  font-size: 12px;
+}
+
+.leftContainer .title {
+  font-size: 1rem;
+  margin: 30px 0px 10px 0px;
+  color: grey;
+}
+
+.leftContainer input {
+  /*! */
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.Tip-Buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  row-gap: 10px;
+}
+
+.Tip-Buttons > * {
+  text-align: center;
+  border-radius: 5px;
+  color: orange;
+  background-color: #f0f0f3;
+  box-shadow: -3px -3px 5px #fafafa, 2px 2px 5px #aeaec0;
+
+  font-size: 1.1rem;
+  margin-top: 10px;
+  width: 30%;
+  height: 40px;
+}
+
+.leftContainer .Select-Tip-Input {
+  box-shadow: inset -3px -3px 5px #ffffff, inset 1px 1px 5px #aeaec0;
+
+  font-size: 1rem;
+  color: $VeryDarkCyan;
+  width: 20%;
+  padding: 0 5% 0 5%;
+}
+
+.leftContainer .FullLengthInput {
+  color: $VeryDarkCyan;
+
+  padding: 0 5% 0 5%;
+  background-color: #f0f0f3;
+  box-shadow: inset -3px -3px 5px #ffffff, inset 1px 1px 5px #aeaec0;
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 90%;
+}
+
+.rightContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 10% 7% 10% 7%;
+  width: 86%;
+  color: white;
+  box-shadow: -3px -3px 10px #ffffff, 4px 4px 4px #aeaec0;
+}
+
+.rightContainer > * {
+  margin-top: 20px;
+}
+
+.rightContainer :first-child {
+  margin-top: 0;
+}
+
+.rightContainer .Line-Output {
+  /*!!.!!*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightContainer .Line-Output .Title {
+  font-size: 1.1rem;
+  color: Orange;
+}
+
+.rightContainer .Line-Output .Money {
+  font-size: 1.7rem;
+  color: Orange;
+}
+
+.rightContainer .Line-Output .Share {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.rightContainer button {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  /*!.!*/
+  text-transform: uppercase;
+  //border: 3px solid orange;
+  box-shadow: -3px -3px 10px #ffffff, 4px 4px 4px #aeaec0;
+  border-radius: 5px;
+  color: $VeryDarkCyan;
+}
+
+@media (min-width: 600px) {
+  main {
+    flex-direction: row;
+    margin-top: 150px;
+    padding: 2%;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 15px;
+  }
+
+  .leftContainer {
+    width: 56%;
+  }
+
+  .Tip-Buttons > * {
+    font-size: 0.7em;
+    width: 30%;
+    height: 40px;
+  }
+
+  .leftContainer .Select-Tip-Input {
+    padding: 0 5% 0 5%;
+    width: 19%;
+  }
+
+  .rightContainer {
+    margin: 0 0 0 4%;
+    padding: 50px 4% 20px 4%;
+    width: 40%;
+  }
+
+  .rightContainer * {
+    margin-top: 10px;
+  }
+
+  .rightContainer button {
+    margin-top: 70px;
+  }
+}
